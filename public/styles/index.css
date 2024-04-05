@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+header {
+    background-color: black;
+    color: white;
+    padding: 7px;
+}
+.text-title {
+    text-align: center;
+    font-size: 2.5rem;
+}
+.navbar {
+    display: flex;
+    width: 100%;
+}
+ul.nav-items-left {
+    display: flex;
+    width: 100%;
+    justify-content: start;
+}
+ul.nav-items-right {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    padding-right: 10px;
+}
+li {
+    list-style: none;
+}
+li.nav-item {
+    margin: 9px;
+}
+li.nav-item a {
+    color: white;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+}
+li.nav-item a:hover {
+    color: yellow;
+    font-weight: bold;
+}
+/* background image */
+.intro {
+    background: linear-gradient(to right, rgba(255,255,255, 0.7), rgba(0,0,0,0.3)),
+            url("https://plus.unsplash.com/premium_photo-1674635191022-84de68397aa2?q=80&w=928&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
+    no-repeat fixed center;
+    background-size:cover ;
+    height: 100vh;
+}
+.spacing {
+    padding-top: 60px;
+}
+.image-wrapper {
+    margin: auto;
+    width: 90%;
+}
+.col-1 {
+    margin: 20px;
+    width: 30%;
+    max-height: 300px;
+    float: left;
+}
+.col-2 {
+    margin: 20px;
+    width: 30%;
+    max-height: 300px;
+    float: left;
+}
+.col-3 {
+    margin: 20px;
+    width: 30%;
+    max-height: 300px;
+    float: left;
+}
+.col-4 {
+    margin: 20px;
+    max-height: 300px;
+    width: 30%;
+}
+.img-fluid {
+    max-height: 400px;
+    min-height: 300px;
+    width: 100%;
+}
+@media(max-width: 1351px) {
+    .col-1 {
+        margin: 20px;
+        width: 27%;
+        max-height: 300px;
+        float: left;
+    }
+    .col-2 {
+        margin: 20px;
+        width: 27%;
+        max-height: 300px;
+        float: left;
+    }
+    .col-3 {
+        margin: 20px;
+        width: 27%;
+        max-height: 300px;
+        float: left;
+    }
+    .col-4 {
+        margin: 20px;
+        max-height: 300px;
+        width: 27%;
+    }
+}
+@media(max-width: 718px) {
+    .intro {
+        background: linear-gradient(to right, rgba(255,255,255, 0.7), rgba(0,0,0,0.3)),
+        url("https://plus.unsplash.com/premium_photo-1674635191022-84de68397aa2?q=80&w=928&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
+        no-repeat fixed center;
+        background-size:cover ;
+        height: 130vh;
+    }
+    .spacing {
+        padding-top: 60px;
+    }
+}
+.col-footer {
+    position: relative;
+    top: -30px;
+    text-align: center;
+    background: black linear-gradient(rgba(0, 0, 0, 0.7), rgba(244, 244, 244, 0.4));
+    padding: 3px;
+    color: white;
+}
+/* image hover css */
+.zoom {
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+
+.zoom:hover {
+    transform: scale(1.1);
+}
+footer {
+    background-color: black;
+}
+footer > section {
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+a.btn-prev {
+    background-color: black;
+    color: white;
+    padding: 9px;
+    border-radius: 7px;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+a.btn-nex {
+    background-color: black;
+    color: white;
+    padding: 9px;
+    border-radius: 7px;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+a.btn-prev:hover {
+    background-color: dimgrey;
+}
+a.btn-nex:hover {
+    background-color: dimgrey;
+}
+div.footer-text {
+    padding: 20px;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
